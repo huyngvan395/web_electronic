@@ -1,0 +1,112 @@
+[
+    {
+        "name": "iPhone 13 Pro",
+        "description": "The iPhone 13 Pro features a 6.1-inch Super Retina XDR display, A15 Bionic chip, and Pro camera system with advanced photo and video capabilities.",
+        "price": 999,
+        "image":"image/phone/phone1.png",
+        "batteryLife": "22 hours",
+        "chargingPort": "Lightning",
+        "operatingSystem": "iOS",
+        "connectivity": ["5G", "Wi-Fi 6", "Bluetooth 5.0", "NFC"],
+        "control": ["Touchscreen", "Face ID", "Siri"]
+    },
+    {
+        "name": "iPhone SE (2023)",
+        "description": "The iPhone SE (2023) is a compact and affordable iPhone with a 4.7-inch Retina HD display, A15 Bionic chip, and a single 12MP camera.",
+        "price": 399,
+        "image":"image/phone/phone2.png",
+        "batteryLife": "15 hours",
+        "chargingPort": "Lightning",
+        "operatingSystem": "iOS",
+        "connectivity": ["5G", "Wi-Fi 6", "Bluetooth 5.0", "NFC"],
+        "control": ["Touchscreen", "Touch ID", "Siri"]
+    },
+    {
+        "name": "Samsung Galaxy S21 Ultra",
+        "description": "The Samsung Galaxy S21 Ultra offers a 6.8-inch Dynamic AMOLED display, Exynos 2100 or Snapdragon 888 processor, and a versatile quad-camera setup.",
+        "price": 1199,
+        "image":"image/phone/phone3.png",
+        "batteryLife": "24 hours",
+        "chargingPort": "USB-C",
+        "operatingSystem": "Android",
+        "connectivity": ["5G", "Wi-Fi 6E", "Bluetooth 5.2", "NFC"],
+        "control": ["Touchscreen", "Fingerprint Sensor", "Face Recognition", "Bixby"]
+    },
+    {
+        "name": "Samsung Galaxy A52",
+        "description": "The Samsung Galaxy A52 is a mid-range smartphone with a 6.5-inch Super AMOLED display, Snapdragon 720G processor, and a quad-camera setup.",
+        "price": 499,
+        "image":"image/phone/phone4.png",
+        "batteryLife": "18 hours",
+        "chargingPort": "USB-C",
+        "operatingSystem": "Android",
+        "connectivity": ["4G", "Wi-Fi 5", "Bluetooth 5.0", "NFC"],
+        "control": ["Touchscreen", "Fingerprint Sensor", "Face Recognition"]
+    },
+    {
+        "name": "Oppo Find X3 Pro",
+        "description": "The Oppo Find X3 Pro comes with a 6.7-inch AMOLED display, Snapdragon 888 processor, and a quad-camera system with a unique microlens camera.",
+        "price": 1149,
+        "image":"image/phone/phone5.png",
+        "batteryLife": "24 hours",
+        "chargingPort": "USB-C",
+        "operatingSystem": "Android",
+        "connectivity": ["5G", "Wi-Fi 6", "Bluetooth 5.2", "NFC"],
+        "control": ["Touchscreen", "Fingerprint Sensor", "Face Recognition"]
+    },
+    {
+        "name": "Oppo Reno6",
+        "description": "The Oppo Reno6 features a 6.4-inch AMOLED display, MediaTek Dimensity 900 processor, and a triple-camera setup with a 64MP main sensor.",
+        "price": 499,
+        "image":"image/phone/phone6.png",
+        "batteryLife": "19 hours",
+        "chargingPort": "USB-C",
+        "operatingSystem": "Android",
+        "connectivity": ["5G", "Wi-Fi 6", "Bluetooth 5.2", "NFC"],
+        "control": ["Touchscreen", "Fingerprint Sensor", "Face Recognition"]
+    },
+    {
+        "name": "Xiaomi Mi 11",
+        "description": "The Xiaomi Mi 11 features a 6.81-inch AMOLED display, Snapdragon 888 processor, and a triple-camera setup with a 108MP main sensor.",
+        "price": 749,
+        "image":"image/phone/phone7.png",
+        "batteryLife": "22 hours",
+        "chargingPort": "USB-C",
+        "operatingSystem": "Android",
+        "connectivity": ["5G", "Wi-Fi 6", "Bluetooth 5.2", "NFC"],
+        "control": ["Touchscreen", "Fingerprint Sensor", "Face Recognition"]
+    },
+    {
+        "name": "Xiaomi Redmi Note 10",
+        "description": "The Xiaomi Redmi Note 10 is a budget-friendly smartphone with a 6.43-inch AMOLED display, Snapdragon 678 processor, and a quad-camera setup.",
+        "price": 199,
+        "image":"image/phone/phone8.png",
+        "batteryLife": "20 hours",
+        "chargingPort": "USB-C",
+        "operatingSystem": "Android",
+        "connectivity": ["4G", "Wi-Fi 5", "Bluetooth 5.0", "NFC"],
+        "control": ["Touchscreen", "Fingerprint Sensor", "Face Recognition"]
+    },
+    {
+        "name": "Realme GT 5G",
+        "description": "The Realme GT 5G features a 6.43-inch Super AMOLED display, Snapdragon 888 processor, and a triple-camera system with a 64MP main sensor.",
+        "price": 599,
+        "image":"image/phone/phone9.png",
+        "batteryLife": "21 hours",
+        "chargingPort": "USB-C",
+        "operatingSystem": "Android",
+        "connectivity": ["5G", "Wi-Fi 6", "Bluetooth 5.2", "NFC"],
+        "control": ["Touchscreen", "Fingerprint Sensor", "Face Recognition"]
+    },
+    {
+        "name": "Realme 8 Pro",
+        "description": "The Realme 8 Pro offers a 6.4-inch Super AMOLED display, Snapdragon 720G processor, and a quad-camera setup with a 108MP main sensor.",
+        "price": 349,
+        "image":"image/phone/phone10.png",
+        "batteryLife": "18 hours",
+        "chargingPort": "USB-C",
+        "operatingSystem": "Android",
+        "connectivity": ["4G", "Wi-Fi 5", "Bluetooth 5.0", "NFC"],
+        "control": ["Touchscreen", "Fingerprint Sensor", "Face Recognition"]
+    }
+]
