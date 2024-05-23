@@ -1,3 +1,4 @@
+// Thêm dữ liệu lấy từ file json đã tạo 
 let Laptopproducts=[];
 let listLaptop=document.querySelector('.list-laptop');
 let Phoneproducts=[];
@@ -16,6 +17,7 @@ const addLaptopDataToHTML=()=>{
                 <button class="cart-add">Add to cart <i class='bx bxs-cart-add' ></i></button>
             </div>
         </div>`;
+            newProduct.querySelector('.cart-add').addEventListener('click', addToCart);
             listLaptop.appendChild(newProduct);
         })
     }
@@ -29,11 +31,12 @@ const addPhoneDataToHTML=()=>{
             newProduct.innerHTML=`<div class="card-product">
             <img src="${product.image}" alt="">
             <div class="content-product">
-                <h4><a href="detailproduct.html">${product.name}</a></h4>
-                <p>$${product.price}</p>
+                <h4 ><a href="detailproduct.html">${product.name}</a></h4>
+                <p >$${product.price}</p>
                 <button class="cart-add">Add to cart <i class='bx bxs-cart-add' ></i></button>
             </div>
         </div>`;
+        newProduct.querySelector('.cart-add').addEventListener('click', addToCart);
             listPhone.appendChild(newProduct);
         })
     }
@@ -55,3 +58,32 @@ const getPhoneData = () =>{
 
 getLaptopData();
 getPhoneData();
+
+// Xét hành động để thêm sản phẩm vào giỏ hàng
+function addToCart(event){
+    event.stopPropagation();
+    var product=event.target.closest('.card-product');
+    let cart=JSON.parse(localStorage.getItem('cart')) || [];
+    if(product){
+        var image=product.querySelector('img').getAttribute('src');
+        var name=product.querySelector('h4').innerText;
+        var price=parseInt(product.querySelector('p').innerText.substring(1));
+
+        const existProduct=cart.findIndex(product=> product.name===name);
+        if(existProduct >=0){
+            cart[existProduct].quantity+=1;
+            cart[existProduct].subtotal=cart[existProduct].price*cart[existProduct].quantity;
+        }
+        else{
+            const newProduct={
+                image,
+                name,
+                price,
+                quantity:1,
+                subtotal:price
+            };
+            cart.push(newProduct);
+        }
+    }
+    localStorage.setItem('cart', JSON.stringify(cart));
+}

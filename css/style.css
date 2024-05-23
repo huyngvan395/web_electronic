@@ -51,7 +51,15 @@ a{
     background-image: var(--bgmain-color);
     height: 70px;
 }
-.logo a h2{
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo h2{
+    padding: 0;
+    margin: 0;
+}
+.logo h2 a{
     color: var(--sup-color);
     font-size: 1.5rem;
 }
@@ -551,5 +559,13 @@ ul{
     .search .search-icon{
         color: var(--sup-color);
         background-color:transparent;
+    }
+}
+@media(max-width:360px){
+    #menu-bar{
+        display: block;
+        position: absolute;
+        left: 4px;
+        color: var(--sup-color);
     }
 }

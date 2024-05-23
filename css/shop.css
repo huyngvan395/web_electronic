@@ -125,9 +125,9 @@
         height: 380px;
     }
 }
-@media(max-width:770px){
+@media (min-width:500px) and ( max-width:770px){
     .card-product{
-        height: 450px;
+        height: 550px;
     }
     .list-type{
         margin: auto;
@@ -136,5 +136,21 @@
     }
     .type-product-item{
         padding: 150px 120px;
+    }
+}
+@media (max-width:500px){
+    .card-product{
+        height: 450px;
+    }
+}
+@media (max-width:360px){
+    .card-product{
+        height: 380px;
+    }
+    
+}
+@media (max-width:320px){
+    .card-product{
+        height: 330px;
     }
 }

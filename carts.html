@@ -9,10 +9,10 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carts.css">
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="css/shop.css">
-    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="header">
@@ -26,13 +26,14 @@
                 <ul class="list-product">
                     <li><a href="#">LAPTOP</a></li>
                     <li><a href="#">PHONE</a></li>
-                    <li><a href="#">HEADPHONE</a></li>
+                    <li><a href="#">EARPHONE</a></li>
                 </ul>
             </li>
             <li><a href="#contact" >CONTACT</a></li>
             <li><a href="about" >ABOUT</a></li>
             <li><a href="faq.html" >FAQ</a></li>
         </ul>
+        
         <div class="icons">
             <div class="search">
                 <input type="text" placeholder="Search product" >
@@ -42,34 +43,55 @@
             <a href="user.html"><i class='bx bx-user-circle' ></i></a>
         </div>
     </div>
-    <div class="type-product">
-        <div class="row container list-type">
-            <a href="#laptop" class="col-lg-4 col-md-6 type-product-item">
-                <i class='bx bx-laptop' ></i>
-            </a>
-            <a href="#phone" class="col-lg-4 col-md-6 type-product-item">
-                <i class='bx bx-mobile' ></i>
-            </a>
-            <a href="#headphone" class="col-lg-4 col-md-6 type-product-item">
-                <i class='bx bx-headphone' ></i>
-            </a>
-        </div>
-    </div>
-    <div class="container laptop-product" id="laptop">
-        <h2>Laptop</h2>
-        <div class="row list-laptop">
-        </div>
-    </div>
-
-    <div class="container phone-product" id="phone">
-        <h2>Phone</h2>
-        <div class="row list-phone">
+    <div class="shopping-cart">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 list-cart">
+                    <h3 class="text-secondary your-cart">YOUR CART</h3>
+                    <div class="cart-product-title">
+                        <div class="product-title">
+                            Product
+                        </div>
+                        <div class="price-title">Price</div>
+                        <div class="quantity-title">
+                            Quantity
+                        </div>
+                        <div class="subtotal-title">Subtotal</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 ">
+                    <div class="cart-collaterals">
+                        <h3 class="text-secondary">CART TOTALS</h3>
+                        <div class="ship">
+                            <h5>Shipping</h5>
+                            <div class="ship-method">
+                                <div class="free-ship">
+                                    <input type="radio" name="ship" id="free-ship"><label for="free-ship">Free shipping</label>
+                                </div>
+                                <div class="local-ship">
+                                    <input type="radio" name="ship" id="local-ship"><label for="local-ship">Local pickup: $5.00</label>
+                                </div>
+                                <div class="flat-ship">
+                                    <input type="radio" name="ship" id="flat-ship"><label for="flat-ship">Flat rate: $10.00</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="paymentTotal">
+                            <h5>Total</h5>
+                            <h5 class="totalprice">$0</h5>
+                        </div>
+                        <div class="checkout-contain">
+                            <button class="checkout">Proceed to payment</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <section class="footer-contact">
-        <div class="row container">
+        <div class="row container ">
             <div class="col-lg-4 col-md-6 footer-item">
-                <h3>Electronic</h3>
+                <h2>Electronic</h2>
                 <p>Support ngvanhuy0000@gmail.com</p>
                 <p>+84328166890</p>
                 <div class="social-platform">
@@ -86,7 +108,7 @@
                 <li><a href="#">Brands</a></li>
                 <li><a href="#">Investors</a></li>
             </div>
-            <div class="col-lg-4 col-md-6 footer-item">
+            <div class="col-lg-4 col-md-6 footer-item ">
                 <h3>Support</h3>
                 <li><a href="#">Support Center</a></li>
                 <li><a href="#">Manage</a></li>
@@ -97,7 +119,6 @@
         </div>
     </section>
     <section class="footer-last">&copy; Electronic. All Rights Reserved.</section>
-    <script src="js/shop.js"></script>
     <script src="js/navbar.js"></script>
+    <script src="js/carts.js"></script>
 </body>
-</html>
