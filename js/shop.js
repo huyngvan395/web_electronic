@@ -10,11 +10,11 @@ const addLaptopDataToHTML=()=>{
             let newProduct=document.createElement('div');
             newProduct.classList.add(...['col-lg-4', 'col-md-6']);
             newProduct.innerHTML=`<div class="card-product">
-            <img src="${product.image}" alt="">
+            <div class="img-contain"><img src="${product.image}" alt=""></div>
             <div class="content-product">
                 <h4><a href="detailproduct.html">${product.name}</a></h4>
-                <p>$${product.price}</p>
-                <button class="cart-add">Add to cart <i class='bx bxs-cart-add' ></i></button>
+                <p>${product.price}VND</p>
+                <button class="cart-add">Thêm vào giỏ hàng <i class='bx bxs-cart-add' ></i></button>
             </div>
         </div>`;
             newProduct.querySelector('.cart-add').addEventListener('click', addToCart);
@@ -29,11 +29,11 @@ const addPhoneDataToHTML=()=>{
             let newProduct=document.createElement('div');
             newProduct.classList.add(...['col-lg-4', 'col-md-6']);
             newProduct.innerHTML=`<div class="card-product">
-            <img src="${product.image}" alt="">
+            <div class="img-contain"><img src="${product.image}" alt=""></div>
             <div class="content-product">
                 <h4 ><a href="detailproduct.html">${product.name}</a></h4>
-                <p >$${product.price}</p>
-                <button class="cart-add">Add to cart <i class='bx bxs-cart-add' ></i></button>
+                <p >${product.price}VND</p>
+                <button class="cart-add">Thêm vào giỏ hàng <i class='bx bxs-cart-add' ></i></button>
             </div>
         </div>`;
         newProduct.querySelector('.cart-add').addEventListener('click', addToCart);
@@ -67,7 +67,7 @@ function addToCart(event){
     if(product){
         var image=product.querySelector('img').getAttribute('src');
         var name=product.querySelector('h4').innerText;
-        var price=parseInt(product.querySelector('p').innerText.substring(1));
+        var price = parseFloat(product.querySelector('p').innerText.match(/\d+(\.\d+)?/)[0]);
 
         const existProduct=cart.findIndex(product=> product.name===name);
         if(existProduct >=0){

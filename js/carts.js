@@ -21,7 +21,7 @@ function displayProductToCart(){
         </div>
         <div class="price-contain">
             <div class="price-text">Price</div>
-            <div class="price">$${product.price}</div>
+            <div class="price">${product.price}VND</div>
         </div>
         <div class="quantity-contain">
             <div class="quantity-text">Quantity</div>
@@ -33,7 +33,7 @@ function displayProductToCart(){
         </div>
         <div class="subtotal-contain">
             <div class="subtotal-text">Subtotal</div>
-            <div class="subtotal">$${product.subtotal}</div>
+            <div class="subtotal">${product.subtotal}VND</div>
         </div>
         <div class="remove-cart"><i class='bx bx-x' id="remove-cart"></i></div>`;
         listcart.appendChild(cart_product);
@@ -74,7 +74,7 @@ function increaseQuantity(event){
             product.subtotal = product.price * product.quantity;
             localStorage.setItem('cart', JSON.stringify(cart));
             cart_product.querySelector('.number').innerText=product.quantity;
-            cart_product.querySelector('.subtotal').innerText = `$${product.subtotal}`;
+            cart_product.querySelector('.subtotal').innerText = `${product.subtotal}VND`;
         }
     })
     displayCartCollateral();
@@ -110,7 +110,7 @@ function calculateTotal(){
 function displayCartCollateral(){
     let totalprice=document.querySelector('.totalprice');
     let total=calculateTotal();
-    totalprice.textContent=`$${total}`;
+    totalprice.textContent=`${total}VND`;
 }
 
 document.addEventListener('DOMContentLoaded', function(){
