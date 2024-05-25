@@ -361,6 +361,19 @@ ul{
     transform: translate(-10%, -50%);
     transition: 1s;
 }
+.shopnow{
+    position: absolute;
+    bottom: 15%;
+    right: 45%;
+    padding: 20px 35px;
+    background-color: var(--bgsub-color);
+    color: var(--sup-color);
+    border-radius: 5px;
+}
+.shopnow:hover{
+    background-color: var(--sup-color);
+    color: var(--bgsub-color);
+}
 /* .mCarousel.showDetail::before{
     transform: translate(-100%, -50%) rotate(90deg);
     filter: blur(130px);
@@ -424,6 +437,22 @@ ul{
 }
 #menu-bar:hover{
     cursor: pointer;
+}
+.benefits-contain{
+    margin: 15px 60px;
+    padding: 15px 15px;
+    border-top:4px solid var(--bgsub-color);
+}
+.benefits-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    font-size: 1.2rem;
+}
+.benefits-item .icon{
+    color: var(--bgsub-color);
+    font-size: 1.8rem;
 }
 
 /* responsive */
@@ -515,6 +544,12 @@ ul{
     .mCarousel .list .item{
         width: 90%;
     }
+    .benefits-item{
+        justify-content: flex-start;
+    }
+    .benefits-item:nth-child(3){
+        margin-top: 10px;
+    }
 }
 @media screen and (max-width: 770px){
     /* mobile */
@@ -543,6 +578,13 @@ ul{
     .arrows{
         bottom: 25px;
     }
+    .benefits-item{
+        margin-top: 10px;
+    }
+    .shopnow{
+        bottom: 10%;
+        padding: 18px 32px;
+    }
 }
 @media(max-width:600px){
     .search input{
@@ -557,6 +599,22 @@ ul{
     }
     .mCarousel .list .item:nth-child(2) .introduce{
         width: 40%;
+    }
+    .benefits-contain{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .shopnow{
+        bottom: 10%;
+        padding: 14px 26px;
+        right: 35%;
+    }
+}
+@media(max-width:500px){
+    .shopnow{
+        bottom: 7%;
+        padding: 10px 22px;
+        right: 25%;
     }
 }
 @media(max-width:400px){
@@ -590,6 +648,11 @@ ul{
         padding: 10px 20px;
         border-top: 1px solid rgba(0,0,0,0.3);
         margin: 0 10px;
+    }
+    .shopnow{
+        bottom: 8%;
+        padding: 8px 16px;
+        right: 18%;
     }
 }
 @media(max-width:320px){

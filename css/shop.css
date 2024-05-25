@@ -105,7 +105,8 @@
 }
 .content-product p{
     font-size: 18px;
-    color: rgba(0,0,0,0.5);
+    color: var(--bgsub-color);
+    font-weight: 300;
 }
 .list-phone{
     margin:15px;

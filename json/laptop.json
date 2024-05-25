@@ -56,57 +56,58 @@
     },
     {
         "name": "Microsoft Surface Laptop 4",
-        "description": "The Microsoft Surface Laptop 4 offers a sleek design, a vibrant 13.5-inch PixelSense display, and a choice of Intel or AMD processors.",
+        "description": "Microsoft Surface Laptop 4 mang đến thiết kế mỏng, màn hình PixelSense 13.5 inch sống động và tùy chọn bộ vi xử lý Intel hoặc AMD.",
         "price": 24990000,
         "image": "image/laptop/laptop6.png",
-        "batteryLife": "19 hours",
+        "batteryLife": "19 giờ",
         "chargingPort": "Surface Connect",
         "operatingSystem": "Windows 10",
         "connectivity": ["Wi-Fi 6", "Bluetooth 5.0", "USB-C", "USB-A"],
-        "control": ["Keyboard", "Trackpad", "Touchscreen"]
+        "control": ["Bàn phím", "Bàn di chuột", "Màn hình cảm ứng"]
     },
     {
         "name": "Acer Swift 3",
-        "description": "The Acer Swift 3 is a budget-friendly laptop with a 14-inch Full HD display and an AMD Ryzen 7 processor, perfect for everyday tasks.",
+        "description": "Acer Swift 3 là laptop thân thiện với ngân sách với màn hình Full HD 14 inch và bộ vi xử lý AMD Ryzen 7, hoàn hảo cho các công việc hàng ngày.",
         "price": 18490000,
         "image": "image/laptop/laptop7.png",
-        "batteryLife": "12 hours",
+        "batteryLife": "12 giờ",
         "chargingPort": "USB-C",
         "operatingSystem": "Windows 10",
         "connectivity": ["Wi-Fi 6", "Bluetooth 5.0", "USB-A", "HDMI"],
-        "control": ["Keyboard", "Trackpad"]
+        "control": ["Bàn phím", "Bàn di chuột"]
     },
     {
         "name": "Razer Blade 15",
-        "description": "The Razer Blade 15 is a high-end gaming laptop with a 15.6-inch display, NVIDIA GeForce RTX 3070 graphics, and an Intel Core i7 processor.",
+        "description": "Razer Blade 15 là laptop chơi game cao cấp với màn hình 15.6 inch, đồ họa NVIDIA GeForce RTX 3070 và bộ vi xử lý Intel Core i7.",
         "price": 50990000,
         "image": "image/laptop/laptop8.png",
-        "batteryLife": "6 hours",
+        "batteryLife": "6 giờ",
         "chargingPort": "USB-C",
         "operatingSystem": "Windows 10",
         "connectivity": ["Wi-Fi 6", "Bluetooth 5.1", "USB-A", "HDMI", "Thunderbolt 3"],
-        "control": ["Keyboard", "Trackpad"]
+        "control": ["Bàn phím", "Bàn di chuột"]
     },
     {
         "name": "Samsung Galaxy Book Pro 360",
-        "description": "The Samsung Galaxy Book Pro 360 is an ultra-thin 2-in-1 laptop with a 13.3-inch AMOLED display and a long-lasting battery life.",
+        "description": "Samsung Galaxy Book Pro 360 là laptop 2 trong 1 siêu mỏng với màn hình AMOLED 13.3 inch và thời lượng pin lâu dài.",
         "price": 22500000,
         "image": "image/laptop/laptop9.webp",
-        "batteryLife": "21 hours",
+        "batteryLife": "21 giờ",
         "chargingPort": "USB-C",
         "operatingSystem": "Windows 10",
         "connectivity": ["Wi-Fi 6", "Bluetooth 5.1", "USB-C", "USB-A"],
-        "control": ["Keyboard", "Trackpad", "Touchscreen"]
+        "control": ["Bàn phím", "Bàn di chuột", "Màn hình cảm ứng"]
     },
     {
         "name": "Google Pixelbook Go",
-        "description": "The Google Pixelbook Go is a lightweight Chromebook with a 13.3-inch touchscreen display, designed for portability and performance.",
+        "description": "Google Pixelbook Go là Chromebook nhẹ với màn hình cảm ứng 13.3 inch, được thiết kế để di động và hiệu suất.",
         "price": 15000000,
         "image": "image/laptop/laptop10.webp",
-        "batteryLife": "12 hours",
+        "batteryLife": "12 giờ",
         "chargingPort": "USB-C",
         "operatingSystem": "Chrome OS",
         "connectivity": ["Wi-Fi 5", "Bluetooth 4.2", "USB-C"],
-        "control": ["Keyboard", "Trackpad", "Touchscreen"]
+        "control": ["Bàn phím", "Bàn di chuột", "Màn hình cảm ứng"]
     }
+    
 ]
