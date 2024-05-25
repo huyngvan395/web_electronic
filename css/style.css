@@ -80,7 +80,7 @@ ul{
     transform: translateY(-5px);
     border-left: 4px solid rgb(255, 129, 129);
     transition: all .3 ease-in;
-    color: var(--text-color);
+    color: var(--bgsub-color);
 }
 .icons{
     display: flex;
