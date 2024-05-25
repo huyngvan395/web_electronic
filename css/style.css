@@ -422,9 +422,12 @@ ul{
     font-size: 2.5rem;
     display: none;
 }
+#menu-bar:hover{
+    cursor: pointer;
+}
 
 /* responsive */
-@media(max-width:1180px){
+@media(max-width:1250px){
     .search input{
         display: none;
     }
@@ -455,7 +458,7 @@ ul{
         font-size: 14px;
     }
 }
-@media(max-width:990px){
+@media(max-width:1010px){
     .header{
         height: 55px;
     }

@@ -6,7 +6,7 @@ function displayProductToCart(){
     if(cart.length === 0){
         let text=document.createElement('div');
         text.classList.add('d-flex','justify-conentt-center','text-secondary','h3');
-        text.innerHTML='Your cart is empty!';
+        text.innerHTML='Giỏ hàng của bạn rỗng!';
         listcart.appendChild(text);
         let cart_product_title=listcart.querySelector('.cart-product-title');
         cart_product_title.style.display='none';
@@ -20,11 +20,11 @@ function displayProductToCart(){
             <p>${product.name}</p>
         </div>
         <div class="price-contain">
-            <div class="price-text">Price</div>
+            <div class="price-text">Giá</div>
             <div class="price">${product.price}VND</div>
         </div>
         <div class="quantity-contain">
-            <div class="quantity-text">Quantity</div>
+            <div class="quantity-text">Số lượng</div>
             <div class="quantity">
                 <div class="decrease"><i class="bx bx-minus"></i></div>
                 <div class="number">${product.quantity}</div>
@@ -32,7 +32,7 @@ function displayProductToCart(){
             </div>
         </div>
         <div class="subtotal-contain">
-            <div class="subtotal-text">Subtotal</div>
+            <div class="subtotal-text">Tổng</div>
             <div class="subtotal">${product.subtotal}VND</div>
         </div>
         <div class="remove-cart"><i class='bx bx-x' id="remove-cart"></i></div>`;
@@ -90,7 +90,7 @@ function removeCartProduct(event){
     if (cart.length === 0) {
         let text=document.createElement('div');
         text.classList.add('d-flex','justify-conentt-center','text-secondary','h3');
-        text.innerHTML='Your cart is empty!';
+        text.innerHTML='Giỏ hàng của bạn rỗng!';
         listcart.appendChild(text);
         let cart_product_title=listcart.querySelector('.cart-product-title');
         cart_product_title.style.display='none';

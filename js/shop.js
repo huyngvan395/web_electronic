@@ -10,7 +10,7 @@ const addLaptopDataToHTML=()=>{
             let newProduct=document.createElement('div');
             newProduct.classList.add(...['col-lg-4', 'col-md-6']);
             newProduct.innerHTML=`<div class="card-product">
-            <div class="img-contain"><img src="${product.image}" alt=""></div>
+            <div class="img-contain"><a href="detailproduct.html"><img src="${product.image}" alt=""></a></div>
             <div class="content-product">
                 <h4><a href="detailproduct.html">${product.name}</a></h4>
                 <p>${product.price}VND</p>
@@ -18,6 +18,8 @@ const addLaptopDataToHTML=()=>{
             </div>
         </div>`;
             newProduct.querySelector('.cart-add').addEventListener('click', addToCart);
+            newProduct.querySelector('.img-contain a').addEventListener('click', event=>{seenDetailProduct(event, 'laptop')});
+            newProduct.querySelector('h4 a').addEventListener('click', event=>{seenDetailProduct(event, 'laptop')});
             listLaptop.appendChild(newProduct);
         })
     }
@@ -29,14 +31,16 @@ const addPhoneDataToHTML=()=>{
             let newProduct=document.createElement('div');
             newProduct.classList.add(...['col-lg-4', 'col-md-6']);
             newProduct.innerHTML=`<div class="card-product">
-            <div class="img-contain"><img src="${product.image}" alt=""></div>
+            <div class="img-contain"><a href="detailproduct.html"><img src="${product.image}" alt=""></a></div>
             <div class="content-product">
                 <h4 ><a href="detailproduct.html">${product.name}</a></h4>
                 <p >${product.price}VND</p>
                 <button class="cart-add">Thêm vào giỏ hàng <i class='bx bxs-cart-add' ></i></button>
             </div>
         </div>`;
-        newProduct.querySelector('.cart-add').addEventListener('click', addToCart);
+            newProduct.querySelector('.cart-add').addEventListener('click', addToCart);
+            newProduct.querySelector('.img-contain').addEventListener('click', event=>{seenDetailProduct(event, 'phone')});
+            newProduct.querySelector('h4').addEventListener('click', event=>{seenDetailProduct(event, 'phone')});
             listPhone.appendChild(newProduct);
         })
     }
@@ -86,4 +90,18 @@ function addToCart(event){
         }
     }
     localStorage.setItem('cart', JSON.stringify(cart));
+}
+
+function seenDetailProduct(event, type){
+    event.stopPropagation();
+    var product=event.target.closest('.card-product');
+
+    if(product){
+        var name=product.querySelector('h4').innerText;
+        var detail={
+            name:name,
+            type:type
+        };
+    }
+    localStorage.setItem('detail', JSON.stringify(detail));
 }

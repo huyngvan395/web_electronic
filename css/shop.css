@@ -76,10 +76,16 @@
     align-items: center;
     width: 100%;
 }
+.card-product .img-contain a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .img-contain img{
     width: 80%;
     background-color: rgba(127, 169, 232, 0.2);
     border-radius: 15px;
+    cursor: pointer;
 }
 .content-product{
     display: flex;

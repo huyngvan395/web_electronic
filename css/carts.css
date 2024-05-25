@@ -96,12 +96,7 @@
     align-items: center;
     padding: 2px 3px;
 }
-.cart-product .quantity .decrease:hover{
-    color: var(--sup-color);
-    cursor: pointer;
-    background-color: var(--bgsub-color);
-}
-.cart-product .quantity .increase:hover{
+.cart-product .quantity .decrease:hover,.cart-product .quantity .increase:hover{
     color: var(--sup-color);
     cursor: pointer;
     background-color: var(--bgsub-color);
