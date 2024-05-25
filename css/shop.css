@@ -31,15 +31,6 @@
 .type-product-item:hover i{
     color: var(--sup-color);
 }
-/* .type-product-item:nth-child(1){
-    background-color: rgba(234, 182, 182,0.3);
-}
-.type-product-item:nth-child(2){
-    background-color: rgba(226, 227, 142, 0.3);
-}
-.type-product-item:nth-child(3){
-    background-color: rgba(149, 225, 177, 0.3);
-} */
 .type-product-item i{
     font-size: 100px;
     color:var(--bgsub-color)
@@ -47,10 +38,6 @@
 .laptop-product{
     margin-top: 50px;
     background-color: var(--bgmain1-color);
-}
-.laptop-product h2{
-    font-size: 70px;
-    color: rgba(0,0,0,.7);
 }
 .list-laptop{
     margin:15px;
@@ -127,7 +114,14 @@
     margin-top: 50px;
     background-color: var(--bgmain1-color);
 }
-.phone-product h2{
+.list-headphone{
+    margin:15px;
+}
+.headphone-product{
+    margin-top: 50px;
+    background-color: var(--bgmain1-color);
+}
+.laptop-product h2, .phone-product h2, .headphone-product h2{
     font-size: 70px;
     color: rgba(0,0,0,.7);
 }
@@ -152,10 +146,16 @@
     .type-product-item{
         padding: 150px 120px;
     }
+    .laptop-product h2, .phone-product h2, .headphone-product h2{
+        font-size: 45px;
+    }
 }
 @media (max-width:500px){
     .card-product{
         height: 450px;
+    }
+    .laptop-product h2, .phone-product h2, .headphone-product h2{
+        font-size: 35px;
     }
 }
 @media (max-width:360px){

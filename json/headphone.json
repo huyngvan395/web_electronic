@@ -1,0 +1,102 @@
+[
+    {
+        "name":"Bose Headphones 700",
+        "description":"Tai nghe chống ồn cao cấp với thiết kế sang trọng và chất lượng âm thanh vượt trội.",
+        "price":9990000,
+        "image":"image/headphone/headphone1.png",
+        "batteryLife":"20 giờ",
+        "chargingPort":"USB-C",
+        "compatibleOperatingSystem":"iOS và Android",
+        "connectivity":"Bluetooth 5.0",
+        "control":"Chạm trên tai nghe"
+    },
+    {
+        "name": "Havit i62",
+        "description": "Tai nghe không dây Havit i62 với thiết kế nhỏ gọn và thoải mái, cung cấp trải nghiệm nghe nhạc tuyệt vời.",
+        "price": 899000,
+        "image": "image/headphone/headphone2.png",
+        "batteryLife": "12 giờ ",
+        "chargingPort": "Cổng sạc micro USB",
+        "compatibleOperatingSystem": "Tương thích với iOS và Android",
+        "connectivity": "Bluetooth 5.0",
+        "control": "Nút điều khiển tích hợp trên tai nghe"
+    },
+    {
+        "name": "JBL Live 670NC",
+        "description": "Tai nghe không dây JBL Live 670NC với công nghệ chống ồn hiện đại và âm thanh sống động, mang lại trải nghiệm nghe nhạc hoàn hảo.",
+        "price": 3499000,
+        "image": "image/headphone/headphone3.png",
+        "batteryLife": "30 giờ ",
+        "chargingPort": "Cổng sạc USB-C",
+        "compatibleOperatingSystem": "Tương thích với iOS và Android",
+        "connectivity": "Bluetooth 5.0",
+        "control": "Nút điều khiển cảm ứng trên tai nghe"
+    },
+    {
+        "name": "Raycon H20",
+        "description": "Tai nghe không dây Raycon H20 với thiết kế thời trang và âm thanh chất lượng, mang đến trải nghiệm nghe nhạc tuyệt vời cho người dùng.",
+        "price": 1899000,
+        "image": "image/headphone/headphone4.png",
+        "batteryLife": "20 giờ sử dụng liên tục",
+        "chargingPort": "Cổng sạc USB-C",
+        "compatibleOperatingSystem": "Tương thích với iOS và Android",
+        "connectivity": "Bluetooth 5.0",
+        "control": "Nút điều khiển tích hợp trên tai nghe"
+    },
+    {
+        "name": "ONIKUMA B90 RGB",
+        "description": "Tai nghe chơi game ONIKUMA B90 RGB với đèn LED RGB đa sắc lấp lánh và âm thanh sống động, tạo ra trải nghiệm chơi game tuyệt vời.",
+        "price": 849000,
+        "image": "image/headphone/headphone5.png",
+        "batteryLife": "Không có, cắm trực tiếp vào máy tính",
+        "chargingPort": "Không áp dụng",
+        "compatibleOperatingSystem": "Tương thích với PC và các thiết bị chơi game",
+        "connectivity": "Dây cáp cắm 3.5mm",
+        "control": "Nút điều khiển âm lượng tích hợp trên dây cáp"
+    },
+    {
+        "name": "Shure Aonic 50",
+        "description": "Tai nghe không dây Shure Aonic 50 với công nghệ chống ồn cao cấp và âm thanh chi tiết, mang đến trải nghiệm nghe nhạc chất lượng cao và thoải mái cho người dùng.",
+        "price": 5799000,
+        "image": "image/headphone/headphone6.png",
+        "batteryLife": "20 giờ",
+        "chargingPort": "Cổng sạc USB-C",
+        "compatibleOperatingSystem": "Tương thích với iOS và Android",
+        "connectivity": "Bluetooth 5.0",
+        "control": "Nút điều khiển tích hợp trên tai nghe"
+    },
+    {
+        "name": "Style 3 Lavender",
+        "description": "Dòng tai nghe STYLE 3 LAVENDER với màu sắc tươi sáng và thiết kế thời trang, mang lại trải nghiệm nghe nhạc thoải mái và phong cách cho người dùng.",
+        "price": 1190000,
+        "image": "image/headphone/headphone7.png",
+        "batteryLife": "15 giờ sử dụng liên tục",
+        "chargingPort": "Cổng sạc Micro USB",
+        "compatibleOperatingSystem": "Tương thích với các thiết bị di động và máy tính",
+        "connectivity": "Bluetooth 5.0",
+        "control": "Nút điều khiển trên tai nghe"
+    },
+    {
+        "name": "Zeb-Thunder",
+        "description": "Loa Bluetooth Zeb-Thunder với âm thanh mạnh mẽ và bass sâu, mang lại trải nghiệm nghe nhạc đắm chìm cho người dùng.",
+        "price": 699000,
+        "image": "image/headphone/headphone8.png",
+        "batteryLife": "10 giờ sử dụng liên tục",
+        "chargingPort": "Cổng sạc Micro USB",
+        "compatibleOperatingSystem": "Tương thích với iOS, Android và các thiết bị khác có Bluetooth",
+        "connectivity": "Bluetooth 5.0",
+        "control": "Nút điều khiển trên loa và điều khiển từ xa"
+    },
+    {
+        "name": "Edifier WH950NB",
+        "description": "Tai nghe không dây Edifier WH950NB với công nghệ chống ồn hiện đại và âm thanh chất lượng cao, mang lại trải nghiệm nghe nhạc tuyệt vời và thoải mái cho người dùng.",
+        "price": 2199000,
+        "image": "image/headphone/headphone9.png",
+        "batteryLife": "35 giờ sử dụng liên tục",
+        "chargingPort": "Cổng sạc USB-C",
+        "compatibleOperatingSystem": "Tương thích với iOS và Android",
+        "connectivity": "Bluetooth 5.0",
+        "control": "Nút điều khiển tích hợp trên tai nghe"
+    }    
+]
+

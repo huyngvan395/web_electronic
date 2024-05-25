@@ -3,6 +3,8 @@ let Laptopproducts=[];
 let listLaptop=document.querySelector('.list-laptop');
 let Phoneproducts=[];
 let listPhone=document.querySelector('.list-phone');
+let Headphoneproducts=[];
+let listHeadPhone=document.querySelector('.list-headphone');
 
 const addLaptopDataToHTML=()=>{
     if(Laptopproducts.length>0){
@@ -46,6 +48,27 @@ const addPhoneDataToHTML=()=>{
     }
 }
 
+const addHeadPhoneDataToHTML=()=>{
+    if(Headphoneproducts.length>0){
+        Headphoneproducts.forEach(product=>{
+            let newProduct=document.createElement('div');
+            newProduct.classList.add(...['col-lg-4', 'col-md-6']);
+            newProduct.innerHTML=`<div class="card-product">
+            <div class="img-contain"><a href="detailproduct.html"><img src="${product.image}" alt=""></a></div>
+            <div class="content-product">
+                <h4 ><a href="detailproduct.html">${product.name}</a></h4>
+                <p >${product.price}VND</p>
+                <button class="cart-add">Thêm vào giỏ hàng <i class='bx bxs-cart-add' ></i></button>
+            </div>
+        </div>`;
+            newProduct.querySelector('.cart-add').addEventListener('click', addToCart);
+            newProduct.querySelector('.img-contain').addEventListener('click', event=>{seenDetailProduct(event, 'headphone')});
+            newProduct.querySelector('h4').addEventListener('click', event=>{seenDetailProduct(event, 'headphone')});
+            listHeadPhone.appendChild(newProduct);
+        })
+    }
+}
+
 const getLaptopData = () =>{
     fetch("json/laptop.json").then(reponse=>reponse.json()).then(data=>{
         Laptopproducts=data;
@@ -60,8 +83,16 @@ const getPhoneData = () =>{
     }).catch(error=> console.error('Errot fetching data:', error));
 }
 
+const getHeadPhoneData = () =>{
+    fetch("json/headphone.json").then(reponse=>reponse.json()).then(data=>{
+        Headphoneproducts=data;
+        addHeadPhoneDataToHTML();
+    }).catch(error=> console.error('Errot fetching data:', error));
+}
+
 getLaptopData();
 getPhoneData();
+getHeadPhoneData();
 
 // Xét hành động để thêm sản phẩm vào giỏ hàng
 function addToCart(event){

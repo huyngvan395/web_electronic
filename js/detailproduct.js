@@ -1,5 +1,6 @@
 let Laptopproducts=[];
 let Phoneproducts=[];
+let Headphoneproducts=[];
 let cartBtn=document.querySelector('.cart-add');
 let increaseBtn=document.querySelector('.increase');
 let decreaseBtn=document.querySelector('.decrease');
@@ -16,6 +17,12 @@ const getPhoneData = () =>{
     }).catch(error=> console.error('Errot fetching data:', error));
 }
 
+const getHeadPhoneData = () =>{
+    return fetch("json/headphone.json").then(reponse=>reponse.json()).then(data=>{
+        Headphoneproducts=data;
+    }).catch(error => console.error('Error fetching data:', error));
+}
+
 function showDetailProduct(){
     let detail=JSON.parse(localStorage.getItem('detail')) || [];
 
@@ -27,25 +34,46 @@ function showDetailProduct(){
         products = Laptopproducts;
     } else if (type === 'phone') {
         products = Phoneproducts;
+    } else if (type === 'headphone'){
+        products = Headphoneproducts;
     }
 
     if (products) {
         const product = products.find(p => p.name === name);
         if (product) {
-            const productInfo = document.querySelector('.product-info');
-            productInfo.querySelector('.name').textContent = product.name;
-            productInfo.querySelector('.des').textContent = product.description;
-            productInfo.querySelector('.price').textContent = product.price + ' VND';
-            productInfo.querySelector('.battery-life').textContent = product.batteryLife;
-            productInfo.querySelector('.charging-port').textContent = product.chargingPort;
-            productInfo.querySelector('.operating-system').textContent = product.operatingSystem;
-            productInfo.querySelector('.connect').textContent = Array.isArray(product.connectivity) ? product.connectivity.join(', ') : 'N/A';
-            productInfo.querySelector('.control').textContent = Array.isArray(product.control) ? product.control.join(', ') : 'N/A';
-            const imageContain=document.querySelector('.image-contain');
-            imageContain.querySelector('img').setAttribute('src', product.image);
-            cartBtn.addEventListener('click', addToCart);
-            increaseBtn.addEventListener('click', increaseQuantity);
-            decreaseBtn.addEventListener('click', decreaseQuantity);
+            if(type === 'headphone'){
+                const productInfo = document.querySelector('.product-info');
+                productInfo.querySelector('.name').textContent = product.name;
+                productInfo.querySelector('.des').textContent = product.description;
+                productInfo.querySelector('.price').textContent = product.price + ' VND';
+                productInfo.querySelector('.battery-life').textContent = product.batteryLife;
+                productInfo.querySelector('.charging-port').textContent = product.chargingPort;
+                productInfo.querySelector('.operating-system-title').textContent='Hệ điều hành tương thích';
+                productInfo.querySelector('.operating-system').textContent = product.compatibleOperatingSystem;
+                productInfo.querySelector('.connect').textContent = product.connectivity;
+                productInfo.querySelector('.control').textContent = product.control;
+                const imageContain=document.querySelector('.image-contain');
+                imageContain.querySelector('img').setAttribute('src', product.image);
+                cartBtn.addEventListener('click', addToCart);
+                increaseBtn.addEventListener('click', increaseQuantity);
+                decreaseBtn.addEventListener('click', decreaseQuantity);
+            }
+            else{
+                const productInfo = document.querySelector('.product-info');
+                productInfo.querySelector('.name').textContent = product.name;
+                productInfo.querySelector('.des').textContent = product.description;
+                productInfo.querySelector('.price').textContent = product.price + ' VND';
+                productInfo.querySelector('.battery-life').textContent = product.batteryLife;
+                productInfo.querySelector('.charging-port').textContent = product.chargingPort;
+                productInfo.querySelector('.operating-system').textContent = product.operatingSystem;
+                productInfo.querySelector('.connect').textContent = Array.isArray(product.connectivity) ? product.connectivity.join(', ') : 'N/A';
+                productInfo.querySelector('.control').textContent = Array.isArray(product.control) ? product.control.join(', ') : 'N/A';
+                const imageContain=document.querySelector('.image-contain');
+                imageContain.querySelector('img').setAttribute('src', product.image);
+                cartBtn.addEventListener('click', addToCart);
+                increaseBtn.addEventListener('click', increaseQuantity);
+                decreaseBtn.addEventListener('click', decreaseQuantity);
+            }
         }
     }
 }
@@ -101,5 +129,5 @@ function increaseQuantity(event){
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    Promise.all([getLaptopData(), getPhoneData()]).then(showDetailProduct)});
+    Promise.all([getLaptopData(), getPhoneData(), getHeadPhoneData()]).then(showDetailProduct)});
 
